@@ -1,8 +1,42 @@
-import React from 'react'
+import React from 'react';
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import EmailIcon from "@material-ui/icons/Email";
+import GithubIcon from "@material-ui/icons/Github"
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className='home'>
+    <div className='about'>
+        <h2>My name is Temple Kramer </h2>
+        <div className='prompt'>
+            <p>A software developer with a passion for learning new skills</p>
+            <LinkedInIcon />
+            <EmailIcon />
+            <GithubIcon />
+        
+        
+         </div>
+    </div>
+    <div className='skills'>
+        <h1> Skills</h1>
+        <ol className='list'>
+         <li className='item'>
+            <h2> Front-End</h2>
+            <span>ReactJS, HTML, CSS, NPM, BootStrap</span>
+         </li>
+         <li className='item'>
+            <h2> Back-End</h2>
+            <span>NodeJS, ExpressJS, GraphQL, MYSQL, MongoDB, </span>
+         </li>
+         <li className='item'>
+            <h2> Languages</h2>
+            <span>Javascript</span>
+         </li>
+
+        </ol>
+    </div>
+        
+    </div>
   )
 }
 
